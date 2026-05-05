@@ -2,8 +2,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "@/pages/HomePage";
 import WaitlistPage from "@/pages/WaitlistPage";
 
+const routerBase = import.meta.env.BASE_URL === "/" ? undefined : import.meta.env.BASE_URL;
+
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={routerBase}>
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/waitlist" element={<WaitlistPage />} />

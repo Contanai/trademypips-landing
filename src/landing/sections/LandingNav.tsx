@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const LOGO = "/trademypip_logo.png";
+const LOGO = `${import.meta.env.BASE_URL}trademypip_logo.png`;
 
 export function LandingNav() {
   return (

@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 
+const LOGO = `${import.meta.env.BASE_URL}trademypip_logo.png`;
+
 export default function WaitlistPage() {
   return (
     <div className="dark min-h-screen overflow-x-hidden bg-background font-body-md text-on-surface">
       <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-background/80 backdrop-blur-xl">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
           <Link className="flex items-center gap-3" to="/">
-            <img alt="TradeMyPips Logo" className="h-10 w-auto object-contain" src="/trademypip_logo.png" />
+            <img alt="TradeMyPips Logo" className="h-10 w-auto object-contain" src={LOGO} />
           </Link>
           <Link
             className="rounded-full border border-primary/30 px-5 py-2 text-sm font-label-caps text-white/90 transition-colors hover:bg-primary/20"
