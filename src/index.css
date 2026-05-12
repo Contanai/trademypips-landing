@@ -83,4 +83,32 @@
       "GRAD" 0,
       "opsz" 24;
   }
+
+  /* Dashboard (education.html) — neutral glass, separate from marketing `.glass-card` */
+  .dashboard-glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .dashboard-bg-glow-purple {
+    background: radial-gradient(circle at 80% 20%, rgba(178, 145, 255, 0.08) 0%, transparent 50%);
+  }
+
+  .dashboard-bg-glow-cyan {
+    background: radial-gradient(circle at 20% 80%, rgba(0, 213, 253, 0.08) 0%, transparent 50%);
+  }
+
+  .dashboard-video-overlay {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 }
